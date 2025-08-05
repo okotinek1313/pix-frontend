@@ -1,5 +1,7 @@
 export default function AppPage() {
     return (
-        <div id="AppPage"></div>
+        <div id="AppPage">
+            
+        </div>
     )
 }
