@@ -14,3 +14,7 @@ body {
   background: rgb(30, 30, 30);
   overflow: hidden;
 }
+
+.lucide-icon{
+  @apply rounded-full border-grey-20 border-solid border-1 bg-grey-40 hover:bg-grey-60 hover:border-grey-50 transition-all flex w-12 h-12 duration-300 ease-in-out p-2.5
+}
