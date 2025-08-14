@@ -2,19 +2,18 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Pages
 import HomePage from './pages/HomePage';
-import AppPage from './pages/AppPage';
+import SettingsPage from './pages/SettingsPage';
 
 // Paths
 const HomePath : string = "/"
-const AppPath : string = "apps"
-
+const SettingsPath : string = "/settings"
 
 export default function AppRouter() {
   return (
     <BrowserRouter>
       <Routes>
           <Route path={HomePath} element={<HomePage />} />
-          <Route path={AppPath} element={<AppPage />} />
+          <Route path={SettingsPath} element={<SettingsPage />} />
       </Routes>
     </BrowserRouter>
   );
