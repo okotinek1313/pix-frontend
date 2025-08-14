@@ -1,8 +1,0 @@
-@import "tailwindcss";
-
-@theme {
-    --color-grey-30: rgb(30,30,30);
-    --color-grey-20: rgb(20,20,20);
-    --color-grey-10: rgb(10,10,10);
-    --color-light-gray: #969393;
-}
