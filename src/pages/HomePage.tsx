@@ -19,8 +19,10 @@ export default function HomePage() {
         <>
             <div className="w-screen h-screen !overflow-hidden">
                 <Sidebar>
-                    <LucideIcon.House className={"cursor-pointer lucide-icon text-white left-[1.5%] top-[1.5%] absolute"} size={LucideIconSize} onClick={navigateHome}/>
-                    <LucideIcon.Settings className={"cursor-pointer lucide-icon text-white right-[1.5%] top-[1.5%] absolute"} size={LucideIconSize} onClick={navigateSettings} />
+                    <div className="w-full h-16" id={"sidebarHeader"}>
+                        <LucideIcon.House className={"cursor-pointer lucide-icon text-white left-[1.5%] top-[1.5%] absolute"} size={LucideIconSize} onClick={navigateHome}/>
+                        <LucideIcon.Settings className={"cursor-pointer lucide-icon text-white right-[1.5%] top-[1.5%] absolute"} size={LucideIconSize} onClick={navigateSettings} />
+                    </div>
                 </Sidebar>
             </div>
         </>
