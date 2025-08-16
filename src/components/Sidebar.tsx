@@ -48,7 +48,7 @@ export default function Sidebar({
       {/* Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-opacity-20 z-40 transition-opacity duration-300 ease-in-out"
+          className="fixed inset-0 bg-opacity-20 z-40 transition-all duration-300 ease-in-out"
           onClick={closeSidebar}
           aria-hidden="true"
         />
