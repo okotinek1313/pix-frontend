@@ -1,9 +1,11 @@
 export default function NotFoundPage() {
-    return(
-        <div className="w-full h-full overflow-hidden">
-            <h1 className="mx-auto text-grey-40">404</h1>
-            <h3 className="mx-auto text-grey-40 top[20%]">Page Not Found :(</h3>
-        </div>
-    )
+  return (
+    <div className="flex items-center justify-center min-h-screen bg-gray-900">
+      <div className="text-center">
+        <h1 className="text-white text-8xl font-bold mb-6">404</h1>
+        <p className="text-white text-2xl">Page Not Found :(</p>
+      </div>
+    </div>
+  )
 }
 
