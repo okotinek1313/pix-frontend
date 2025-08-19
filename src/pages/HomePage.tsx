@@ -30,7 +30,7 @@ export default function HomePage() {
                 <div className="w-[75%] h-[75%] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" id="appsGrid">
                     <div id="localContend" className="w-[56px] h-[56px] absolute top-[3%] left-[3%]">
                         <button className="width-full h-full rounded-md" onClick={navigateLocalContent}>
-                            <LucideIcon.HardDrive size={56} className="text-white"></LucideIcon.HardDrive>
+                            <LucideIcon.HardDrive size={largeLucideIconSize} className="text-white"></LucideIcon.HardDrive>
                         </button>
                     </div>    
                 </div>
