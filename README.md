@@ -22,22 +22,28 @@ A media frontend designed specifically for Raspberry Pi tablets that allows user
 1. Install Node.js on your system
 
 2. Clone this repository
+   ```bash
    git clone https://github.com/okotinek1313/pix-frontend.git
    cd pix-frontend
-
+   ```
 3. Install dependencies
+   ```bash
    npm install
+   ```
 
-4. Create .env file in root directory with:
+5. Create .env file in root directory with:
    VITE_CLERK_PUBLISHABLE_KEY=your_clerk_key_here
    VITE_TMDB_API_KEY=your_tmdb_key_here
 
-5. Run development server
+6. Run development server
+   ```bash
    npm run dev
+   ```
 
 ## Build for Production
+```bash
 npm run build
-
+```
 ## Project Structure
 The project uses a component-based architecture with pages for different views (Home, Local Content, Settings). All database operations are handled through Convex functions.
 
