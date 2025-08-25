@@ -1,45 +1,50 @@
-# **PIX Frontend**
+# PIX Frontend
 
----
+A web application for custom Raspberry Pi tablet projects.
 
-## **What Is PiX Frontend?**
+## Live Demo
+Main Domain: [PIX-Frontend](https://pi-x-frontend.vercel.app)
+Original Domain: https://pi-x.vercel.app
 
-### **Pi X Frontend is a web application for a custom tablet type project made for a Raspberry Pi.**
+## What Is This?
+A media frontend designed specifically for Raspberry Pi tablets that allows users to manage and view their local media content with metadata from TMDB.
 
----
+## Tech Stack
+- React with TypeScript
+- Vite build tool
+- Tailwind CSS for styling
+- Clerk for authentication
+- Convex for database
+- TMDB API for media metadata
 
-## **Usage**
+## Setup
 
-### **To use the project, you will need to have Node.js installed on your computer.**
+1. Install Node.js on your system
 
-**You Must add the .env file to the root of the project. Then add your clerk api key and TMDB api key to the .env file. ***See Below for an example*****
+2. Clone this repository
+   git clone https://github.com/okotinek1313/pix-frontend.git
+   cd pix-frontend
 
-```.env
-VITE_CLERK_PUBLISHABLE_KEY=<Your Clerk API Key>
-VITE_TMDB_API_KEY=<Your TMDB API Key>
-```
+3. Install dependencies
+   npm install
 
-### **To run the project, run the following commands:**
+4. Create .env file in root directory with:
+   VITE_CLERK_PUBLISHABLE_KEY=your_clerk_key_here
+   VITE_TMDB_API_KEY=your_tmdb_key_here
 
-```bash
+5. Run development server
+   npm run dev
 
-npm install
-npm run dev
-```
-
-### **To build the project, run the following command:**
-
-```bash
-
+## Build for Production
 npm run build
-```
 
+## Project Structure
+The project uses a component-based architecture with pages for different views (Home, Local Content, Settings). All database operations are handled through Convex functions.
 
-#### ***Contact Me For Original API Keys***
+## API Keys
+You will need to obtain your own API keys for Clerk and TMDB to run this project. The keys are stored in environment variables for security.
 
----
+## Usage
+After setup, the application will provide a media interface where users can authenticate, scan local media files, and view them with automatically fetched metadata.
 
-## **More Info**
-
-#### ***The Domain Of This Project Is:*** [PiX Frontend](https://pi-x-frontend.vercel.app) **( Original Domain:** ***https://pi-x.vercel.app*** **)**
-
+Contact me for more information about the project setup.
