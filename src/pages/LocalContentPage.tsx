@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useQuery, useMutation } from 'convex/react';
 import { api } from '../../convex/_generated/api';
+import type { Id } from '../../convex/_generated/dataModel.d.ts';// Import Id type
 import * as LucideIcon from 'lucide-react';
 
 const TMDB_API_KEY = import.meta.env.VITE_TMDB_API_KEY;
@@ -10,6 +11,16 @@ export default function LocalContentPage() {
     const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
     const myMedia = useQuery(api.userMedia.getMyMedia);
     const saveMediaMutation = useMutation(api.userMedia.saveMedia);
+    const deleteMediaMutation = useMutation(api.userMedia.deleteMedia);
+    
+    // Handle Deletion - Properly typed
+    const handleDelete = async (id: Id<"userMedia">) => {
+        try {
+            await deleteMediaMutation({ id });
+        } catch (error) {
+            console.error("Failed to delete media:", error);
+        }
+    };
 
     const handleFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
         const files = event.target.files;
@@ -108,7 +119,15 @@ export default function LocalContentPage() {
                     <h3 className="font-medium text-xl mb-4">Your Media Library</h3>
                     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
                         {myMedia.map((item) => (
-                            <div key={item._id} className="bg-white rounded-lg shadow-md p-3">
+                            <div key={item._id} className="bg-white rounded-lg shadow-md p-3 relative">
+                                {/* Delete button */}
+                                <button
+                                    onClick={() => handleDelete(item._id)}
+                                    className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full p-1 hover:bg-red-600 transition-colors"
+                                >
+                                    <LucideIcon.X size={16} />
+                                </button>
+                                
                                 {item.posterPath ? (
                                     <img 
                                         src={`https://image.tmdb.org/t/p/w200${item.posterPath}`} 

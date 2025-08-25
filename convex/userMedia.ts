@@ -56,3 +56,20 @@ export const getMyMedia = query({
       .collect();
   },
 });
+
+//Make Movies deletable
+export const deleteMedia = mutation({
+  args: {
+    id: v.id("userMedia"), // The document ID to delete
+  },
+  handler: async (ctx, args) => {
+    const identity = await ctx.auth.getUserIdentity();
+    if (!identity) throw new Error("Not authenticated");
+    
+    // Verify the user owns this media item before deleting
+    const media = await ctx.db.get(args.id);
+    if (media && media.userId === identity.subject) {
+      await ctx.db.delete(args.id);
+    }
+  },
+});
