@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@clerk/clerk-react": "^5.41.1",
+    "@convex-dev/auth": "^0.0.88",
     "@tailwindcss/postcss": "^4.1.11",
     "convex": "^1.26.1",
     "lucide-react": "^0.539.0",
