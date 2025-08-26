@@ -2,12 +2,17 @@
 
 A web application for custom Raspberry Pi tablet projects.
 
+---
+
 ## Live Demo
-Main Domain: [PIX-Frontend](https://pi-x-frontend.vercel.app)
-Original Domain: https://pi-x.vercel.app
+Link: [PIX-Frontend](https://pi-x-frontend.duckdns.org)
+
+---
 
 ## What Is This?
 A media frontend designed specifically for Raspberry Pi tablets that allows users to manage and view their local media content with metadata from TMDB.
+
+---
 
 ## Tech Stack
 - React with TypeScript
@@ -16,6 +21,8 @@ A media frontend designed specifically for Raspberry Pi tablets that allows user
 - Clerk for authentication
 - Convex for database
 - TMDB API for media metadata
+
+---
 
 ## Setup
 
@@ -40,17 +47,28 @@ A media frontend designed specifically for Raspberry Pi tablets that allows user
    npm run dev
    ```
 
+---
+
 ## Build for Production
 ```bash
 npm run build
 ```
+
+---
+
 ## Project Structure
 The project uses a component-based architecture with pages for different views (Home, Local Content, Settings). All database operations are handled through Convex functions.
+
+---
 
 ## API Keys
 You will need to obtain your own API keys for Clerk and TMDB to run this project. The keys are stored in environment variables for security.
 
+---
+
 ## Usage
 After setup, the application will provide a media interface where users can authenticate, scan local media files, and view them with automatically fetched metadata.
+
+---
 
 Contact me for more information about the project setup.
