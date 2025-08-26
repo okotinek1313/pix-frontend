@@ -48,7 +48,7 @@ CONVEX_DEPLOYMENT=your_convex_deployment
 ## Project Structure
 ```
 convex/           # Database schema & server functions
-src/
+src/              # Source directory holds most code
   components/     # Reusable UI components
   pages/          # Route components (Home, LocalContent, Settings)
   hooks/          # Custom React hooks
@@ -78,4 +78,5 @@ Personal educational project - not licensed for distribution.
 ---
 
 The first README is simple and focused on what the app does for end users. The second contains all technical details for developers.
+
 
