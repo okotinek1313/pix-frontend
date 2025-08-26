@@ -32,7 +32,7 @@ npm run dev
 
 ## Environment Variables
 
-### .evn
+### .env
 ```env
 VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 VITE_TMDB_API_KEY=your_tmdb_api_key
@@ -78,3 +78,4 @@ Personal educational project - not licensed for distribution.
 ---
 
 The first README is simple and focused on what the app does for end users. The second contains all technical details for developers.
+
