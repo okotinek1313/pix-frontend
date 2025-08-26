@@ -1,7 +1,5 @@
 # Contributing
 
-# Development Guide - PIX Frontend
-
 ## Tech Stack
 - **Frontend:** React 18 + TypeScript
 - **Build Tool:** Vite
@@ -78,5 +76,6 @@ Personal educational project - not licensed for distribution.
 ---
 
 The first README is simple and focused on what the app does for end users. The second contains all technical details for developers.
+
 
 
