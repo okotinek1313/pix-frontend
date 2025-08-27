@@ -1,4 +1,3 @@
-// src/pages/HomePage.tsx
 import * as LucideIcon from 'lucide-react'
 import Sidebar from '../components/Sidebar'
 import { useNavigate } from 'react-router-dom'
@@ -9,7 +8,7 @@ const normalLucideIconSize : number = 36
 
 export default function HomePage() {
     const navigate = useNavigate()
-    const { isVisible, open, close } = useAppSelector(); // Get state AND controls
+    const { isVisible, open, close } = useAppSelector();
 
     const navigateHome = () => navigate('/')
     const navigateSettings = () => navigate('/settings')
@@ -31,15 +30,31 @@ export default function HomePage() {
                                 <LucideIcon.Plus size={36}/>
                             </button>
                         </div>
-                        {/* Pass state down as props */}
                         <AppSelector isVisible={isVisible} onClose={close} />
                     </div>
                 </div>
 
                 <Sidebar>
                     <div className="w-full h-16" id={"sidebarHeader"}>
-                        <LucideIcon.House className={"cursor-pointer lucide-icon text-white left-[1.5%] top-[1.5%] absolute"} size={normalLucideIconSize} onClick={navigateHome}/>
-                        <LucideIcon.Settings className={"cursor-pointer lucide-icon text-white right-[1.5%] top-[1.5%] absolute"} size={normalLucideIconSize} onClick={navigateSettings} />
+                        <button 
+                            onClick={navigateHome}
+                            className="lucide-icon left-[1.5%] top-[1.5%] absolute p-2 z-10 flex items-center justify-center"
+                        >
+                            <LucideIcon.House 
+                                className={"text-white pointer-events-none"} 
+                                size={normalLucideIconSize} 
+                            />
+                        </button>
+
+                        <button 
+                            onClick={navigateSettings}
+                            className="lucide-icon right-[1.5%] top-[1.5%] absolute p-2 z-10 flex items-center justify-center"
+                        >
+                            <LucideIcon.Settings 
+                                className={"text-white pointer-events-none"} 
+                                size={normalLucideIconSize}  
+                            />
+                        </button>
                     </div>
 
                     <div className="h-[calc(100%-16px)] absolute top-[16px] w-full"  id="sidebarContent">
