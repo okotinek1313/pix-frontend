@@ -25,4 +25,4 @@ Visit: https://pix-frontend.duckdns.org
 
 ---
 
-*Created as a personal project by a young developer learning modern web technologies.*
+*Created as a personal project by a young developer.*
