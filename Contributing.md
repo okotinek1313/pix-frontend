@@ -75,9 +75,6 @@ src/              # Source directory holds most code
 ## License
 Personal educational project - not licensed for distribution.
 
----
-
-The first README is simple and focused on what the app does for end users. The second contains all technical details for developers.
 
 
 
