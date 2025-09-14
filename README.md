@@ -23,9 +23,6 @@ Visit: https://pix-frontend.duckdns.org
 - Clean, easy-to-use interface
 - Works on any device with a browser
 
-## For Raspberry Pi Users
-Perfect for turning your Raspberry Pi into a dedicated media center tablet. Just open the website in full-screen mode.
-
 ---
 
 *Created as a personal project by a young developer learning modern web technologies.*
